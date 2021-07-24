@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   minitalk.h                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fgradia <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/05/28 17:13:38 by fgradia           #+#    #+#             */
+/*   Updated: 2021/05/28 17:13:40 by fgradia          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef MINITALK_H
 # define MINITALK_H
 
@@ -6,9 +18,10 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-int		ft_atoi(char *str);
-int		ft_strlen(char *s);
-void	ft_exit(char *s);
-void	ft_write_nbr(int pid);
+typedef struct s_byte
+{
+	int		bit;
+	char	c;
+}	t_byte;
 
 #endif

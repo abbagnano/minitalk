@@ -1,10 +1,8 @@
 OUT1	=	server
 OUT2	=	client
-CFLAGS	=	-Wall -Wextra #-Werror
-OBJS_1	=	server.o \
-			utils.o
-OBJS_2	=	client.o \
-			utils.o
+CFLAGS	=	-Wall -Wextra -Werror
+OBJS_1	=	server.o 
+OBJS_2	=	client.o 
 
 all		:	$(OUT1) $(OUT2)
 
